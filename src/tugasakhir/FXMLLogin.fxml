@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="343.0" style="-fx-background-color: #006666;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhir.FXMLLoginController">
+   <children>
+      <Label layoutX="128.0" layoutY="44.0" prefHeight="60.0" prefWidth="142.0" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="149.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="223.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="idUsername" layoutX="162.0" layoutY="147.0" style="-fx-background-color: #00b3b3;" />
+      <JFXTextField fx:id="idPassword" layoutX="162.0" layoutY="221.0" style="-fx-background-color: #00b3b3;" />
+      <JFXButton fx:id="idButton" layoutX="133.0" layoutY="292.0" onAction="#login" prefHeight="31.0" prefWidth="78.0" style="-fx-background-color: #00b3b3;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

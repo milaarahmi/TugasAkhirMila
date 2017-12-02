@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="602.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhir.PinjamBukuController">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="363.0" layoutX="-9.0" layoutY="-62.0">
+         <image>
+            <Image url="@../gambar/buku4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="43.0" text="DATA ANGGOTA" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabel" layoutX="25.0" layoutY="125.0" prefHeight="200.0" prefWidth="553.0">
+         <columns>
+            <TableColumn fx:id="usernameId" prefWidth="141.0" text="Username" />
+            <TableColumn fx:id="passwordID" prefWidth="139.0" text="Password" />
+            <TableColumn fx:id="alamatID" prefWidth="142.0" text="Alamat" />
+            <TableColumn fx:id="telpID" prefWidth="130.0" text="No.Telp" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="doto" layoutX="333.0" layoutY="350.0" onAction="#baca" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #00b3b3;" text="DATA ANGGOTA" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="menu" layoutX="208.0" layoutY="350.0" onAction="#menu" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #00b3b3;" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

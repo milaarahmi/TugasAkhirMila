@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="602.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhir.PinjamBukuController">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="363.0" layoutX="-9.0" layoutY="-62.0">
+         <image>
+            <Image url="@../gambar/buku4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="43.0" text="PEMINJAMAN BUKU" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabel" layoutX="25.0" layoutY="125.0" prefHeight="200.0" prefWidth="553.0">
+         <columns>
+            <TableColumn fx:id="noID" prefWidth="125.0" text="No Buku" />
+            <TableColumn fx:id="pengarangID" prefWidth="93.0" text="Pengarang" />
+            <TableColumn fx:id="judulID" prefWidth="104.0" text="Judul" />
+            <TableColumn fx:id="tahunID" prefWidth="97.0" text="Tahun" />
+            <TableColumn fx:id="penerbitID" prefWidth="120.0" text="Penerbit" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="baca" layoutX="376.0" layoutY="350.0" onAction="#baca" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #00b3b3;" text="DAFTAR BUKU" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="reset1" layoutX="255.0" layoutY="350.0" onAction="#hapus" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #00b3b3;" text="PINJAM" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="menu" layoutX="134.0" layoutY="350.0" onAction="#menu" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #00b3b3;" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="BebasNeue" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
